@@ -56,6 +56,6 @@ const server = http.createServer(async (req, res) => {
   // most important part, send down the asset
 });
 
-server.listen(port, hostname, () => {
+server.listen(process.env.PORT, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
